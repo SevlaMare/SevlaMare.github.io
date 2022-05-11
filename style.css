@@ -1,3 +1,5 @@
+main { min-width: 320px; }
+
 /* CONTAINER */
 .container {
   max-width: 1100px;
@@ -26,8 +28,6 @@
   background: #123;
   color: #fff;
 }
-
-main { min-width: 320px; }
 
 /* --- CUSTOM --- */
 #logo { color: #fff; }
@@ -58,7 +58,7 @@ nav { background: rgba(70, 130, 180, 0.87); }
 #about { min-height: 250px; }
 #about h3 { line-height: 26px; }
 #about p { line-height: 22px; }
-#about a { color: #00a2ff }
+#about a { color: #005A8F }
 #about a:hover { text-decoration: underline red; }
 
 #avatar {
@@ -101,7 +101,7 @@ nav { background: rgba(70, 130, 180, 0.87); }
 }
 
 /* CONTACT */
-#contact a { 
+#contact a {
   color: #333;
   padding: 4px;
 }
@@ -123,20 +123,18 @@ footer a {
   color: #333;
 }
 
-@media screen and (min-width: 1000px) {
-  .box1 { max-width: 400px; }
-}
-
-@media screen and (min-width: 963px) {
-  /* change on desk space img-text */
+@media (min-width: 963px) {
   .mr-15-x { margin-right: 15px; }
   .mt-15-x { margin-bottom: 15px; }
 }
 
-@media screen and (max-width: 963px) {
-  /* change mobile title img */
+@media (min-width: 1000px) {
+  .box1 { max-width: 400px; }
+}
+
+@media (max-width: 963px) {
   .mt-15-x {
     margin-top: 20px;
     margin-bottom: 20px;
-   }
+  }
 }

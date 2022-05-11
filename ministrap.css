@@ -2,29 +2,30 @@
 * {
   margin: 0;
   padding: 0;
-  border: 0;
+}
+
+a {
   text-decoration: none;
+}
+
+li {
   list-style: none;
+}
+
+h1, h2, h3, h4, p, a, li, small {
   font-family: 'Montserrat', Arial;
 }
 
-/* TYPOGRAFY */
-.f06 { font-size: 0.6rem; }
-.f08 { font-size: 0.8rem; }
-.f10 { font-size: 1rem; }
-.f12 { font-size: 1.2rem; }
-.f13 { font-size: 1.3rem; }
-.f14 { font-size: 1.4rem; }
-.f16 { font-size: 1.6rem; }
-.fw7 { font-weight: 700; }
-.fs1 { letter-spacing: -0.1rem; }
+button {
+  border: 0;
+}
 
 /* SPACING */
 .m1 { margin: 10px; }
 .m2 { margin: 20px; }
 .m4 { margin: 40px; }
 
-.mx-15 { 
+.mx-15 {
   margin-left: 15px !important;
   margin-right: 15px !important;
 }
@@ -78,12 +79,12 @@
   margin-bottom: 60px;
 }
 
-.mx-8 { 
+.mx-8 {
   margin-left: 80px;
   margin-right: 80px;
 }
 
-.m-center {
+.mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
@@ -98,7 +99,7 @@
 .float-left { float: left; }
 .inline { display: inline-block; }
 
-.grid { 
+.grid {
   display: flex;
   flex-wrap: wrap;
  }
@@ -108,6 +109,19 @@
   top: 0;
 }
 
+/* TYPOGRAFY */
+.f06 { font-size: 0.6rem; }
+.f08 { font-size: 0.8rem; }
+.f10 { font-size: 1rem; }
+.f12 { font-size: 1.2rem; }
+.f13 { font-size: 1.3rem; }
+.f14 { font-size: 1.4rem; }
+.f16 { font-size: 1.6rem; }
+.fw7 { font-weight: 700; }
+.fs1 { letter-spacing: -0.1rem; }
+.f1214 { font-size: 1rem; }
+.sub-title { font-size: 1rem; }
+
 /* COLORS */
 .bg-red { background: #f82626ea; }
 .bg-blue { background: #00a2ff; }
@@ -115,3 +129,9 @@
 .bg-dark { background: #333; }
 .bg-silver { background: #959595; }
 .bg-blue-steel { background: #4682b4; }
+
+@media (min-width: 576px) {
+  .sub-title {
+    font-size: 1.2rem;
+  }
+}
